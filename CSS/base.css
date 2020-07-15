@@ -25,6 +25,7 @@
 /* $Font import 
 ---------------------------*/
 @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+/* 加https:使可以連到本機端 */
 
 /*-------------------------*/
 /* $Reset 
@@ -515,7 +516,7 @@ template {
 .color--white{color: #fff;}
 
 /*-------------------------*/
-/* $Typography 
+/* $Typography (參考material design)
 ---------------------------*/
 html,body{
   font-family: "Helvetica", "Noto Sans TC", "Roboto", "Arial", sans-serif;
@@ -2952,7 +2953,7 @@ hr{
 /* $Utility 
 ---------------------------*/
 /* padding */
-.u-padding-4{padding: 4px !important;}
+.u-padding-4{padding: 4px !important;} /*加important來增加權重  */
 .u-padding-8{padding: 8px !important;}
 .u-padding-16{padding: 16px !important;}
 .u-padding-24{padding: 24px !important;}
