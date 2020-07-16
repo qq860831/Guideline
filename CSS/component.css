@@ -322,6 +322,7 @@
 }
 .imgbox__inner-4-3{
 	padding-top: calc(100% * 3 / 4);
+	/* 運算的數值中間要用空格隔開 */
 }
 .imgbox__inner .image{
 	position: absolute;
@@ -339,8 +340,11 @@
 }
 .thumbnail__title{
 	white-space: nowrap;
+	/* 文字不換行 */
 	overflow: hidden;
+	/* 超過的部分隱藏 */
 	text-overflow: ellipsis;
+	/* 超過的地方(...)點點的形式出現 */
 }
 .thumbnail__preview{
 	height: 72px;
