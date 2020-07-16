@@ -26,13 +26,16 @@
 .btn{
 	/* structure */
 	display: inline-block;
+	/* 通常按鈕或表單都有inline的屬性無法去自由調整 */
 	vertical-align: middle;
+	/* 垂直方向對齊 */
 	position: relative;
 	margin: 0;
 	height: 36px;
 	line-height: 36px;
 	padding: 0 16px;
 	min-width: 64px;
+	/* 框內若沒文字仍然有寬度 */
     box-sizing: border-box;
 	/* style */
 	font-size: 14px;
@@ -41,36 +44,45 @@
 	font-family: "Helvetica", "Noto Sans TC", "Roboto", "Arial", sans-serif;
 	letter-spacing: 0;
 	text-transform: uppercase;
+	/* 文字轉換:uppercase(強制大寫) */
 	text-decoration: none;
 	color: #353630;
 	background-color: #d1d2d3;
 	border: 0;
 	border-radius: 2px;
 	outline: none;
-	/* interact */
+	/* interact(微互動) */
 	cursor: pointer;
+	/* 滑鼠變成手指頭樣子 */
 	overflow: hidden;
+	/* 超過的部分隱藏 */
 	-webkit-user-select: none;
+	/* 讓使用者不能反白元件 */
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    -webkit-user-drag: none;
+	-webkit-user-drag: none;
+	/* 讓使用者不能拖曳元件 */
     transition: background-color 0.3s;
 }
 .btn--hover,
+/* "--"代表修飾語，上述指在按鈕在hover的狀態下 */
 .btn:hover{
 	background-color: #cacbcd;
 }
 .btn--hover,
 .btn:active{
+	/* active(被點擊) */
 	background-color: #cacbcd;
 }
 .btn--disabled,
+/* disabled:不能使用的狀態 */
 .btn--disabled:hover,
 .btn--disabled:active,
 .btn--disabled:focus{
 	color: #fff;
 	pointer-events: none;
+	/* 滑鼠無法點擊到 */
 	background-color: #d1d2d3;
 }
 .btn.btn--primary,
