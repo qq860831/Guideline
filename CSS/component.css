@@ -175,6 +175,7 @@
 	padding: 0;
 }
 .menu.menu--horizontal > li{
+	/* 預設是垂直可以用float變成水平 */
 	float: left;
 }
 .menu__item{
@@ -232,6 +233,7 @@
 		height: 100%;
 		background-color: #43484c;
 		z-index: 1000;
+		/* 確保層級在最高 */
 		padding-top: 56px;
 		opacity: 0;
 		visibility: hidden;
