@@ -277,6 +277,7 @@
 	background-color: #d1d2d3;
 	padding-top: 20vh;
 	padding-bottom: 24vh;
+	/* vh可以隨螢幕的變動等比例縮放 */
 }
 .jumbotron--img-covered{
 	background-image: url("../images/jumbotron_bg.jpg");
