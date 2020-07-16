@@ -237,6 +237,8 @@
 		padding-top: 56px;
 		opacity: 0;
 		visibility: hidden;
+		/* 先隱藏是因為這樣才能點到後面的屬性 */
+		/* 透明度&能見度搭配才可以有變化時間效果，而display:block則無法跑出來 */
 		transition: all 0.3s;
 	}
 	#popup-menu:target{
